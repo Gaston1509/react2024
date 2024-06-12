@@ -1,0 +1,15 @@
+.containerPoke {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  flex-direction: column;
+}
+h1 {
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.imgCentro {
+  width: 300px;
+  margin: 0 auto;
+}
