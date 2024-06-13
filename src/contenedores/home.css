@@ -1,0 +1,11 @@
+.containerHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 4rem 0 4rem;
+}
+.pHome {
+  text-align: justify;
+  margin-top: 2rem;
+}

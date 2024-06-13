@@ -1,28 +1,33 @@
 import React from "react";
 import Item from "../Components/Item";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import axios from "axios";
+import "./pokemones.css";
+import Contexto from "./Contexto";
 
 function Pokemones() {
-  const [productos, setProductos] = useState([]);
+  //const [productos, setProductos] = useState([]);
+  //const traemeProductos = async () => {
+  // const res = await axios.get("https://pokeapi.co/api/v2/pokemon/");
+  // console.log(res.data.results);
+  //setProductos(res.data.results); };
+  const { pokemones, traerPokemones } = useContext(Contexto);
 
-  const traemeProductos = async () => {
-    const res = await axios.get("https://pokeapi.co/api/v2/pokemon/");
-    console.log(res.data.results);
-    setProductos(res.data.results);
-  };
   useEffect(() => {
     console.log("useEffect");
-    traemeProductos();
+    traerPokemones();
   }, []);
+
   return (
     <>
-      <h1>Pokemones</h1>
-      <ul>
-        {productos.map((producto) => (
-          <Item {...producto} key={producto.name}></Item>
-        ))}
-      </ul>
+      <div className="pepe">
+        <h1>Pokemones</h1>
+        <ul className="ulPoke">
+          {pokemones.map((pokemon) => (
+            <Item {...pokemon} key={pokemon.name}></Item>
+          ))}
+        </ul>
+      </div>
     </>
   );
 }

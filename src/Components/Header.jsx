@@ -13,7 +13,7 @@ const Header = () => {
         <Link to={"/pokemones"}>Pokemones </Link> */}
       <nav className="navbar navbar-expand-md bg-body-tertiary bg-new">
         <div className="container-fluid">
-          <Link to={"/"} className="navbar-brand new barra" href="#">
+          <Link to={"/"} className="navbar-brand new barra">
             <img src={logo} alt="" className="imgPikachu" />
           </Link>
           <button
@@ -33,17 +33,17 @@ const Header = () => {
           >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link
-                  to={"/"}
-                  className="nav-link active"
-                  aria-current="page"
-                  href="#"
-                >
-                  Home
+                <Link to={"/"} className="nav-link active" aria-current="page">
+                  Inicio
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to={"/somos"} className="nav-link" href="#">
+                <Link to={"/pokemones"} className="nav-link">
+                  Pokemones
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to={"/somos"} className="nav-link" aria-disabled="true">
                   Somos
                 </Link>
               </li>
@@ -54,15 +54,6 @@ const Header = () => {
                   aria-disabled="true"
                 >
                   Contacto
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to={"/pokemones"}
-                  className="nav-link"
-                  aria-disabled="true"
-                >
-                  Pokemones
                 </Link>
               </li>
             </ul>

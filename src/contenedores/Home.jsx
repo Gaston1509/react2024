@@ -1,10 +1,12 @@
 import React from "react";
+import "./home.css";
 
 const Home = () => {
   return (
-    <div>
+    <div className="containerHome">
       <h1>Home</h1>
-      <p>
+
+      <p className="pHome">
         Los orígenes de Pokémon se remontan a la adolescencia de Satoshi Tajiri
         en su natal Machida, Tokio, cuando exploraba prados y estanques aledaños
         en búsqueda de insectos y otras pequeñas criaturas, como renacuajos y

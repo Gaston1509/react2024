@@ -1,0 +1,16 @@
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.btnFavorito {
+  justify-content: safe;
+  /* margin-left: 2rem; */
+  width: 10rem;
+  padding: 0.3rem;
+  border-radius: 30px;
+  margin-bottom: 2px;
+}

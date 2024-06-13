@@ -12,7 +12,7 @@ const Pokemon = () => {
     const url = "https://pokeapi.co/api/v2/pokemon/" + pedazos[2];
     const res = await axios.get(url);
     setPokemon(res.data);
-    console.log("lo que tiene JSON: ", res);
+    // console.log("lo que tiene JSON: ", res);
   };
   useEffect(() => {
     traemePokemon();
