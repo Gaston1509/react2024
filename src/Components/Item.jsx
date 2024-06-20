@@ -14,7 +14,6 @@ const Item = (props) => {
   let handleGuardar = () => {
     guardamePokemon({ name: name, url: url });
   };
-
   return (
     <>
       <li className="liPoke">

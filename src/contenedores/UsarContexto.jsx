@@ -27,6 +27,7 @@ function UsarContexto(props) {
 
   const guardamePokemon = (item) => {
     console.log("guardamePokemon");
+    alert("Se agrego a favoritos");
     dispatch({
       type: "GUARDAME_POKEMON",
       payload: item,
