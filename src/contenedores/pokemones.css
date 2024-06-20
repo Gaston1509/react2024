@@ -1,3 +1,9 @@
+.PokeContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .ulPoke {
   text-transform: capitalize;
   text-align: center;

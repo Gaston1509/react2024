@@ -20,7 +20,7 @@ function Pokemones() {
 
   return (
     <>
-      <div className="pepe">
+      <div className="PokeContainer">
         <h1>Pokemones</h1>
         <ul className="ulPoke">
           {pokemones.map((pokemon) => (

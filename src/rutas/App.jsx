@@ -10,7 +10,7 @@ import UsarContexto from "../contenedores/UsarContexto";
 
 export const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/react2024">
       <UsarContexto>
         <Layout>
           <Routes>

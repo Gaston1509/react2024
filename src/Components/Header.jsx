@@ -44,7 +44,7 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <Link to={"/somos"} className="nav-link" aria-disabled="true">
-                  Somos
+                  Favoritos
                 </Link>
               </li>
               <li className="nav-item">
