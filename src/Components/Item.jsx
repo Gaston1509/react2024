@@ -20,7 +20,7 @@ const Item = (props) => {
       <li className="liPoke">
         <Link to={"/pokemones/" + urlCortada[6]}>{name}</Link>
         <button className="btnFavorito" onClick={handleGuardar}>
-          Favoritos
+          a favoritos
         </button>
       </li>
     </>
